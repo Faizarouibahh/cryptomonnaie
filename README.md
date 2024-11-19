@@ -1,6 +1,6 @@
-# T-WEB-700-LIL_12
+# Cryptomonnaie
 
-Ce dépôt contient le code source pour le projet T-WEB-700-LIL_12, qui combine un backend utilisant Express.js avec une API Crypto Gecko et une API RSS Feed pour fournir des informations sur la cryptomonnaie et les actualités associées.
+Ce dépôt contient le code source pour le projet cryptomonnaie, qui combine un backend utilisant Express.js avec une API Crypto Gecko et une API RSS Feed pour fournir des informations sur la cryptomonnaie et les actualités associées.
 
 ## Technologies utilisées
 
