@@ -1,0 +1,130 @@
+/* Background for the entire login page */
+.login-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e0e7ea; /* Darker background for the page */
+  padding: 20px;
+}
+
+/* Main container for the login form */
+.auth-form-container {
+  background: radial-gradient(circle, #4e5870 0%, #393e46 100%);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Styling for headings */
+.auth-form-container h2 {
+  color: #e0e5ec;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Styling for the form within the auth container */
+.auth-form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styling for input fields */
+.auth-form-container input {
+  background-color: #bfccd2;
+  color: #042a2f;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 1em;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-form-container input:focus {
+  background-color: #dfe6e9;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Styling for buttons */
+.auth-form-container button {
+  background-color: #1f3c49;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.auth-form-container button:hover {
+  background-color: #374e5a;
+}
+
+/* OAuth section for additional login methods */
+.oauth-login-section {
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* Toggle between login and register modes */
+.toggle-auth-mode {
+  background: none;
+  border: none;
+  color: #e0e5ec;
+  cursor: pointer;
+  font-size: 0.9em;
+  margin-top: 10px;
+  transition: color 0.3s ease;
+}
+
+.toggle-auth-mode:hover {
+  color: #bbd0e6;
+}
+
+/* Error message styling */
+.error {
+  color: #ff6b6b;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Customizing the appearance of the Header (Navbar) */
+.header {
+  background-color: #1f1f2f; /* Different color from the page background */
+  padding: 10px 20px;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #e0e5ec;
+}
+
+@media (max-width: 768px) {
+  .auth-form-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .toggle-auth-mode {
+    font-size: 0.8em;
+  }
+}

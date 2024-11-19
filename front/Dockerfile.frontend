@@ -1,0 +1,35 @@
+
+# Utiliser une image Node.js comme base pour la build de production
+FROM node:18 as build
+
+# Définir le répertoire de travail dans le conteneur
+WORKDIR /usr/src/app
+
+ENV NODE_OPTIONS=--openssl-legacy-provider
+
+# Copier les fichiers de configuration et le package.json
+COPY package*.json ./
+
+# Installer les dépendances
+RUN npm install
+
+# Copier le reste des fichiers de l'application
+COPY . .
+
+# Build de l'application React
+RUN npm run build
+
+# Utiliser une image légère pour servir l'application React
+FROM nginx:alpine
+
+# Remove the default Nginx website
+RUN rm -rf /usr/share/nginx/html/*
+
+# Copy the built React app from the previous step
+COPY --from=build /usr/src/app/build /usr/share/nginx/html
+
+# Expose port 80 to the outside world
+EXPOSE 80
+
+# Start Nginx
+CMD ["nginx", "-g", "daemon off;"]

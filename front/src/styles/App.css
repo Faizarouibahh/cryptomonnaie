@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: visible;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+/* Container for the entire app */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Navigation styles, if you have a navbar */
+.navbar {
+  background-color: #302c42;
+  color: #b0cad2;
+  padding: 10px;
+}
+
+/* Link styles */
+a {
+  color: #b0cad2;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+/* Footer styles, if you have a footer */
+.footer {
+  background-color: #302c42;
+  color: w#b0cad2;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+  /* Pushes the footer to the bottom */
+}
+
+.disable-decoration a:hover:not(.active) {
+  display: block;
+  color: #000000;
+}

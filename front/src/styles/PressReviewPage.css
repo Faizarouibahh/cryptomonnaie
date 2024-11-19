@@ -1,0 +1,140 @@
+/* Apply the same background color to the whole page */
+body {
+  background-color: #302c42;
+  color: #f8f9fa;
+}
+
+.press-page-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #d5d5d5; /* Light background for the container */
+  color: #333; /* Dark text color for readability */
+}
+
+.keyword-management {
+  margin-bottom: 20px;
+}
+
+.keyword-actions {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: flex-start;
+}
+
+.keyword-box-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between input box and buttons */
+}
+
+.keyword-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #ffffff; /* White background for input */
+  color: #333; /* Dark text color */
+  border-radius: 4px;
+  width: 800px; /* Fixed width for the input box */
+}
+
+.keyword-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size for readability */
+  background-color: #233e41; /* Dark button background */
+  color: #f2f7f8; /* Light button text color */
+}
+
+.keyword-button:hover {
+  background-color: #186265; /* Darker button background on hover */
+}
+
+.remove-keyword {
+  background-color: #e0e0e0; /* Faded background for the keyword box */
+  color: #333; /* Dark text color */
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px; /* Smaller font size for keyword */
+  margin-left: 10px; /* Space between the keyword and the search button */
+}
+
+.remove-keyword span {
+  cursor: pointer;
+  font-size: 1rem; /* Slightly smaller font size for the x sign */
+}
+
+.remove-keyword span:hover {
+  color: #f44336; /* Red color on hover */
+}
+
+.filter-links {
+  margin-top: 10px; /* Space between the input and filter links */
+  display: flex;
+  gap: 10px; /* Space between filter links */
+}
+
+.filter-link {
+  font-weight: bold;
+  cursor: pointer;
+  color: #233e41; /* Dark color for filter links */
+  text-decoration: none; /* Remove underline */
+}
+
+.filter-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.article-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 1px solid #faf8f8; /* Light border for the article cards */
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #e9e6e6; /* White background for article cards */
+}
+
+.article-image {
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.article-details {
+  flex: 1;
+}
+
+.article-title {
+  font-size: 1.4rem;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-bottom: 5px;
+  color: #4a878f; /* Dark color for titles */
+}
+
+.article-date {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #777; /* Lighter color for date */
+}
+
+.article-summary {
+  font-size: 1rem;
+}
+
+.error-message {
+  color: #f44336; /* Red color for error messages */
+}
